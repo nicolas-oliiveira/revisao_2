@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/txtResultado"
+        android:id="@+id/txtNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -15,11 +15,71 @@
         android:textSize="25dp"/>
 
     <EditText
-        android:id="@+id/edtResultado"
+        android:id="@+id/edtNome"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/txtEndereco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:text="@string/txtEndereco"
         android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/edtEndereco"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/txtBairro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/txtBairro"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/edtBairro"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/txtCep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/txtCep"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/edtCep"
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/txtCidade"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/edtResultado"
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25dp" />
 
     <Button
         android:id="@+id/btnVoltar"

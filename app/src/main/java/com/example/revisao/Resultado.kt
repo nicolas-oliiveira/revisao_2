@@ -14,6 +14,8 @@ class Resultado : AppCompatActivity() {
 
         val intent = intent
         val inputNome = intent.getStringExtra("nome")
+        val inputEndereco = intent.getStringExtra("Endereço")
+        val input
 
         
 

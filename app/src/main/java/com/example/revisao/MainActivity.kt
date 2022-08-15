@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val edtNome: TextView = findViewById(R.id.edtNome)
+        val txtNome: TextView = findViewById(R.id.edtNome)
         val txtEndereco: TextView = findViewById(R.id.edtEndereco)
         val txtBairro: TextView = findViewById(R.id.edtBairro)
         val txtCep: TextView = findViewById(R.id.edtCep)
@@ -26,7 +26,13 @@ class MainActivity : AppCompatActivity() {
             //Toast.makeText(this, "Nome: " + txtNome.text.toString(), Toast.LENGTH_SHORT).show()
 
             val intent = Intent(this, Resultado::class.java)
-            intent.putExtra("nome" ,edtNome.text.toString() )
+
+            intent.putExtra("nome" ,txtNome.text.toString() )
+
+            intent.putExtra("Endereco" ,txtEndereco.text.toString())
+            intent.putExtra("Bairro" ,txtBairro.text.toString())
+            intent.putExtra("Cep" ,txtCep.text.toString())
+            intent.putExtra("Cidade" ,txtCidade.text.toString())
 
             startActivity(intent)
 
